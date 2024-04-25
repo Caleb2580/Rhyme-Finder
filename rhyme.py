@@ -177,6 +177,7 @@ def get_rhymes(word):
                 w2_p = arpabet[w][-1]
                 if compare_words_stressed(w1_p, w2_p) and w not in rhymes:
                     extra_rhymes.append(w)
+    print(f'Looking for words that rhyme with {word}')
     print(rhymes)
     print("\n\n\n")
     print('Extra: ', extra_rhymes)
